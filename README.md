@@ -1,1 +1,0 @@
-# Clube-3D-Quem-somos
