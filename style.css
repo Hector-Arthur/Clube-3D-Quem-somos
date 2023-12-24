@@ -1,0 +1,197 @@
+:root{
+    --cor-de-fundo: #F8F8F8;
+    --branco-principal: #FFFFFF;
+    --cor-banner: #000000;
+    --roxo-principal: #7B2CBF;
+    --cor-home: #D00000;   /*vermelho*/
+    --cor-quem-somos: #48CAE4; /*azul*/
+    --cor-dar-a-mao: #FFDD00;  /*amarelo*/
+    --cor-instagram: #FF4D6D;  /*rosa*/
+    --cor-doaçao: #008000; /*verde*/
+    --cor-rodape: #5F5F5F;
+    --cor-rodape-texto: #9F9F9F;
+    --font-Inter: 'inter';
+    --font-Rethink-Sans: 'Rethink Sans';
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--font-Inter);
+    background-color: var(--cor-de-fundo);
+}
+/* Inicio header */
+header{
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-banner);
+    color: var(--branco-principal);
+    max-height: 170px;
+    min-height: 170px;
+}
+.container__logo{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 15px;
+}
+.logo{
+    border-radius: 50%;
+    max-width: 25%;
+}
+.container__logo h1{
+    font-size: 45px;
+    margin-left: 15px;
+    font-family: var(--font-Rethink-Sans);
+    color: var(--roxo-principal);
+    text-shadow: 2px 2px 4px purple;
+}
+nav{
+    display: flex;
+    align-items: flex-end;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding: 0;
+    letter-spacing: 1px;
+}
+.menu li{
+    margin: 0 15px;
+    padding: 5px;
+}
+.menu a{
+    text-decoration: none;
+    color: var(--branco-principal);
+}
+/* Inicio botões*/
+.menu .home{
+    color: var(--cor-home);
+    text-shadow: 0.5px 0.5px 4px red;
+}
+.menu .home:hover{
+    color: red;
+}
+.menu .quem_somos{
+    color: var(--cor-quem-somos);
+    text-shadow: 0.5px 0.5px 4px blue;
+}
+.menu .quem_somos:hover{
+    color: aquamarine;
+}
+.menu .dar_a_mao{
+    color: var(--cor-dar-a-mao);
+    text-shadow: 0.5px 0.5px 4px yellow;
+}
+.menu .dar_a_mao:hover{
+    color: gold;
+}
+.menu .instagram{
+    text-shadow: 0.5px 0.5px 4px pink;
+    color: var(--cor-instagram);
+}
+.menu .instagram:hover{
+    color: palevioletred;
+}
+.menu .doacao{
+    color: var(--cor-doaçao);
+    text-shadow: 0.5px 0.5px 4px green;
+}
+.menu .doacao:hover{
+    color: greenyellow;
+}
+.menu .cor:active{
+    color: var(--roxo-principal);
+    text-shadow: 0.5px 0.5px 4px violet;
+}
+/* Final botões*/
+/* Final header */
+.quem_somos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 15px;
+    font-size: 25px;
+    line-height: 1.5;
+}
+.texto h1{
+    font-family: var(--font-Rethink-Sans);
+    letter-spacing: 4px;
+    color: var(--cor-quem-somos);
+    margin-top: 15px;
+    text-shadow: 0px 0px 4px var(--cor-quem-somos);
+    font-size: 50px;
+}
+.texto p{
+    color: blue;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.membros{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.caixa {
+    text-align: center;
+    width: 225px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px #EFEFEF;
+}
+.caixa h1{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: var(--font-Rethink-Sans);
+    color: blue;
+}
+.caixa img{
+    max-width: 100%;
+    border-radius: 5%;
+}
+/*começo rodape*/
+.rodape {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-rodape);
+    color: var(--cor-rodape-texto);
+    height: 125px;
+}
+.rodape__lista{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 30em;
+    margin-top: 1em;
+}
+.lista__link a{
+    text-decoration: none;
+    font-family: var(--font-Rethink-Sans);
+    color: var(--cor-rodape-texto);
+    font-weight: 600;
+}
+.lista__link a:active{
+    color: var(--roxo-principal);
+}
+.rodape h1{
+    font-family: var(--font-Inter);
+    font-size: 15px;
+    font-weight: 400;
+}
+/*final rodape*/
